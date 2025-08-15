@@ -4,20 +4,26 @@ import fs from "fs"
 // const { http, https } = fr
 
 export function readJsonFile(path) {
-	const str = fs.readFileSync(path, "utf8")
-	const json = JSON.parse(str)
-	return json
+  const str = fs.readFileSync(path, "utf8")
+  const json = JSON.parse(str)
+  return json
 }
 
 export function writeJsonFile(path, data) {
-	return new Promise((resolve, reject) => {
-		const jsonData = JSON.stringify(data, null, 2)
+  return new Promise((resolve, reject) => {
+    const jsonData = JSON.stringify(data, null, 2)
 
-		fs.writeFile(path, jsonData, err => {
-			if (err) return reject(err)
-			resolve()
-		})
-	})
+    fs.writeFile(path, jsonData, (err) => {
+      if (err) return reject(err)
+      resolve()
+    })
+  })
+}
+
+export function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min + 1)) + min //The maximum is inclusive and the minimum is inclusive
 }
 
 // export function download(url, fileName) {
@@ -59,57 +65,57 @@ export function writeJsonFile(path, data) {
 // }
 
 export function makeId(length = 5) {
-	let text = ""
-	const possible =
-		"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-	for (let i = 0; i < length; i++) {
-		text += possible.charAt(Math.floor(Math.random() * possible.length))
-	}
-	return text
+  let text = ""
+  const possible =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+  for (let i = 0; i < length; i++) {
+    text += possible.charAt(Math.floor(Math.random() * possible.length))
+  }
+  return text
 }
 
 export function makeRandomBugTitle() {
-	const actions = [
-		"Can't",
-		"Unable to",
-		"Error when trying to",
-		"Crash when",
-		"Unexpected behavior when",
-		"Doesn't",
-		"Fails to",
-		"Incorrectly",
-	]
+  const actions = [
+    "Can't",
+    "Unable to",
+    "Error when trying to",
+    "Crash when",
+    "Unexpected behavior when",
+    "Doesn't",
+    "Fails to",
+    "Incorrectly",
+  ]
 
-	const components = [
-		"open",
-		"close",
-		"save",
-		"load",
-		"delete",
-		"scroll",
-		"refresh",
-		"render",
-	]
+  const components = [
+    "open",
+    "close",
+    "save",
+    "load",
+    "delete",
+    "scroll",
+    "refresh",
+    "render",
+  ]
 
-	const targets = [
-		"sidebar",
-		"modal",
-		"dropdown menu",
-		"file uploader",
-		"profile settings",
-		"search bar",
-		"notification panel",
-		"dashboard",
-	]
+  const targets = [
+    "sidebar",
+    "modal",
+    "dropdown menu",
+    "file uploader",
+    "profile settings",
+    "search bar",
+    "notification panel",
+    "dashboard",
+  ]
 
-	// Random helper
-	const rand = arr => arr[Math.floor(Math.random() * arr.length)]
+  // Random helper
+  const rand = (arr) => arr[Math.floor(Math.random() * arr.length)]
 
-	// Combine into a bug-style title
-	return `${rand(actions)} ${rand(components)} ${rand(targets)}`
+  // Combine into a bug-style title
+  return `${rand(actions)} ${rand(components)} ${rand(targets)}`
 }
 
 export function makeRandomSeverity() {
-	const num = Math.floor(Math.random() * 5) + 1
-	return num
+  const num = Math.floor(Math.random() * 5) + 1
+  return num
 }
