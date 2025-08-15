@@ -1,0 +1,39 @@
+[
+    {
+        "username": "puki",
+        "password": "$2b$10$m928FnLNxu4mBG0CSHQzq.C3kEtK/yp52lQtP7Y0HSxkumSKC9mTq",
+        "fullname": "Puki Norma",
+        "_id": "F9lZfi",
+        "score": 10000,
+        "createdAt": 1755174943965,
+        "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+    },
+    {
+        "username": "admin",
+        "password": "$2b$10$LhWduUZrD6FUstSOQUUut.bWOlBuv5i.FI53Tiog9t4FYns6BM/om",
+        "fullname": "Master Adminov",
+        "_id": "MmbxB0",
+        "score": 10000,
+        "isAdmin": true,
+        "createdAt": 1755174980785,
+        "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+    },
+    {
+        "username": "gustav",
+        "password": "$2b$10$ABskRVJ.76GCw.9w1E6tlu/DY9owCRkPwvPk4QY/HGxeE.y1wOS3O",
+        "fullname": "Gustav Cox",
+        "_id": "I88q1i",
+        "score": 10000,
+        "createdAt": 1755175053404,
+        "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+    },
+    {
+        "username": "alicia",
+        "password": "$2b$10$pI2.ze9dkSLU/qQ7D9vKKuTPFVJIr/1fxnMhL.j1dI0f0aO05TYU2",
+        "fullname": "Alicia Dessendre",
+        "_id": "ZnPk96",
+        "score": 10000,
+        "createdAt": 1755175135126,
+        "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+    }
+]
