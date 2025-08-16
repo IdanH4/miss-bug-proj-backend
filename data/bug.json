@@ -1,37 +1,23 @@
 [
     {
-        "title": "Somee",
-        "description": "a",
-        "severity": 2,
-        "_id": "10XTt",
-        "createdAt": 1754171199
+        "description": "Idan Descr",
+        "title": "Idan Bug",
+        "severity": 789,
+        "_id": "kcdNI",
+        "createdAt": 1755376563485
     },
     {
-        "title": "Incorrectly open dropdown menu",
-        "description": "ada",
-        "severity": 21232,
-        "_id": "9OtUH",
-        "createdAt": 1754171342
+        "description": "Yoni",
+        "title": "Yoni",
+        "severity": 1,
+        "_id": "grfoP",
+        "createdAt": 1755376631649
     },
     {
-        "title": "Can't save sidebar",
-        "description": "a",
-        "severity": 2,
-        "_id": "TRf0T",
-        "createdAt": 1754172660
-    },
-    {
-        "title": "Some title",
-        "description": "This is my description",
-        "severity": 5,
-        "_id": "TTwBg",
-        "createdAt": 1754687731
-    },
-    {
-        "title": "dasdsa",
-        "description": "a",
-        "severity": 2,
-        "_id": "RYDFH",
-        "createdAt": 1754690891
+        "description": "Nir koks",
+        "title": "Nir Bug",
+        "severity": 3,
+        "_id": "DkSAA",
+        "createdAt": 1755377000171
     }
 ]
